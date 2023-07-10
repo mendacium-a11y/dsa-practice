@@ -34,5 +34,18 @@ arr2 = [0,2,0,4,5,0,6,7]
 
 print(moveZero(arr2))
 
+# rotate array
+
+def rotate(arr, k):
+    newArr = [0]*len(arr)
+    for i in range(len(arr)):
+        newArr[(i+k)%len(arr)] = arr[i]
+
+    return newArr
+
+arr3 = [1,2,3,4,5,6,6,7]
+
+print(rotate(arr3, 3))
+
 
 
