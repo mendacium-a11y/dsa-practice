@@ -16,3 +16,23 @@ arr1= [1,2,3,4,5,6]
 
 print(reverseArr(arr1,1))
 
+
+#move zeroes to the end in an array
+
+def moveZero(arr):
+    i = 0
+
+    for j in range(i,len(arr)):
+        if arr[j] != 0:
+            arr[i],arr[j] = arr[j], arr[i]
+            i+=1
+
+    return (arr)
+
+
+arr2 = [0,2,0,4,5,0,6,7]
+
+print(moveZero(arr2))
+
+
+
