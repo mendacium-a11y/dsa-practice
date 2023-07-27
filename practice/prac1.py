@@ -67,8 +67,3 @@ def palindromeChecker(arr):
 string1 = "dad"
 
 # print(palindromeChecker(string1))
-
-#print 2-d array in a sine pattern
-
-def wavePrint(arr):
-    

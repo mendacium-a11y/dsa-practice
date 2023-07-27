@@ -9,6 +9,7 @@ def bubbleSort(arr):
 
 
 arr1 = [64, 45, 32, 96 , 22, 5, 43]
+arr2 = [0, 0, 1, 2, 2]
 
-print(bubbleSort(arr1))
+print(bubbleSort(arr2))
         
