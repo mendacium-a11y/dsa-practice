@@ -66,4 +66,40 @@ def palindromeChecker(arr):
 
 string1 = "dad"
 
-# print(palindromeChecker(string1))
+#first and last occurence in an arr
+
+def checker(arr, k):
+    n = len(arr)
+    start = 0
+    end = n-1
+   
+
+    temp_1 = -1
+    while( start <= end):
+        mid = start + (end-start)//2
+        if arr[mid] == k:
+            temp_1 = mid
+            end = mid -1
+        if arr[mid] > k:
+            end  = mid -1
+        if arr[mid] < k:
+            start = mid + 1
+
+
+    start = 0
+    end = n-1
+    temp_2 = -1
+    while( start <= end):
+        mid = start + (end-start)//2
+        if arr[mid] == k:
+            temp_2 = mid
+            start = mid +1
+        if arr[mid] > k:
+            end  = mid -1
+        if arr[mid] < k:
+            start = mid + 1
+    
+    return temp_1, temp_2
+
+arr4 = [1,2,3,3,3,5,6]
+print(checker(arr4,3))

@@ -68,3 +68,6 @@ def last(arr, key):
 arr1 = [1,2,2,5,5,5,6,8,9]
 print(first(arr1,5))
 print(last(arr1,5))
+
+
+

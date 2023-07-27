@@ -60,5 +60,17 @@ def sum(arr,n):
     return arr[n-1] + sum(arr,n-1)
 
 
-a = [1,2,3,4,6,4]
-print(sum(a,6))
+# a = [1,2,3,4,6,4]
+# `print(sum(a,6))
+
+#linear search recursion
+def linSearch(arr, n, len):
+    if len == 0:
+        return -1
+    elif arr[len-1] == n:
+        return len-1
+    else:
+        return linSearch(arr, n, len-1)
+
+a = [1,2,3,4,5]
+print(linSearch(a,9,5))
