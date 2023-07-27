@@ -32,6 +32,33 @@ def sayNum(n):
     sayNum(n)
     print(num[sayDigit], end=" ")
 
-a = sayNum(435)
-print()
+# a = sayNum(435)
+# print()/
 # print(a)
+
+def isSorted(arr, n):
+    
+    n -= 1
+
+    if n <= 0:
+        return True
+    elif arr[n-1] > arr[n]:
+        return False
+    else:
+        output = isSorted(arr,n-1)
+        return output
+
+# a = [2,3,5,7,6,8]
+# ist = isSorted(a,6)
+# print(ist)
+
+#sum using recursion
+def sum(arr,n):
+    
+    if n == 1:
+        return arr[n-1]
+    return arr[n-1] + sum(arr,n-1)
+
+
+a = [1,2,3,4,6,4]
+print(sum(a,6))
