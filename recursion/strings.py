@@ -26,6 +26,20 @@ def palindrome(arr,i,j):
         j -= 1
         return palindrome(arr, i, j)
 
-str1 = "aaaaabaaa"
-a = palindrome(str1, 0, len(str1)-1)
-print(a)
+# str1 = "aaaaabaaa"
+# a = palindrome(str1, 0, len(str1)-1)
+# print(a)
+
+# calculate power of a num
+def power( a , b ):
+    if b == 0:
+        return 1
+    elif b == 1:
+        return a
+    
+    ans = power(a, b//2)
+    if b%2 == 0:
+        return ans*ans
+    else:
+        return a*ans*ans
+print(power(3,10))
