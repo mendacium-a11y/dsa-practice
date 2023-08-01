@@ -74,3 +74,13 @@ def linSearch(arr, n, len):
 
 a = [1,2,3,4,5]
 print(linSearch(a,9,5))
+
+
+# start and end index using bin search
+def checker (arr,k):
+    n = len(arr)
+    start = 0
+    end = n-1
+    mid = start + (end - start)//2
+
+    
