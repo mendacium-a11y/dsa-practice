@@ -42,4 +42,19 @@ def power( a , b ):
         return ans*ans
     else:
         return a*ans*ans
-print(power(3,10))
+# print(power(3,10))
+
+
+# bubble sort using recursion
+def bubble(arr,len):
+    if len == 1:
+        return arr
+    for i in range(len-1):
+        if arr[i] > arr[i+1]:
+            arr[i], arr[i+1] = arr[i+1], arr[i]
+    len -= 1
+    return bubble(arr, len)
+
+arr1 = [1,4,3,9,2,8,2,3]
+a = bubble(arr1, len(arr1))
+print(a)
