@@ -27,6 +27,8 @@ def merge(left,right):
             sorted_arr.append(right[j])
             j += 1
 
+
+# adding the remaining part of whichever array is left, which are independently sorted so can be added as is
     sorted_arr += left[i:]
     sorted_arr += right[j:]
         
