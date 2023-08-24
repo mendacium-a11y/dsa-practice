@@ -45,9 +45,26 @@ class LinkedList:
     def display(self):
         current = self.head
         while current:
+            
             print(current.data, end=" -> ")
             current = current.next
-        print("None")
+        print("end")
 
+linked_list = LinkedList()
 
+# Insert elements at the head
+linked_list.insertAtHead(10)
+linked_list.insertAtHead(5)
+linked_list.insertAtHead(2)
+
+# Insert elements at the tail
+linked_list.insertAtTail(15)
+linked_list.insertAtTail(20)
+
+# Insert elements at a specific position
+linked_list.insertAtPosition(7, 2)
+linked_list.insertAtPosition(25, 5)
+
+# Display the linked list
+linked_list.display()
         
