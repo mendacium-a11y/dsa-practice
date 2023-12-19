@@ -20,12 +20,6 @@ class Car(Vehicle):
 # Creating an object of the Car class
 car = Car("Toyota", 2022, "Corolla")
 
-car = Car('toyota', 2002, 'corolla')
-vehicle = Vehicle("maruti",2002)
-
-vehicle.start()
-car.start()
-car.drive()
 
 
 
