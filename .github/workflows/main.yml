@@ -10,7 +10,7 @@ jobs:
       - name: Comment on Issue
         uses: actions/github-script@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           script: |
             const issueComment = `Thank you for opening this issue! We will look into it soon.`;
             const { data: issues } = await github.issues.listComments({
