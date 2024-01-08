@@ -50,6 +50,15 @@ class LinkedList:
             current = current.next
         print("end")
 
+    def deleteNode(self,pos):
+        temp = 1
+        tempNode = self.head
+        while(temp < pos-1):
+            tempNode = tempNode.next
+            temp += 1
+        tempNode.next = tempNode.next.next
+        
+
 linked_list = LinkedList()
 
 # Insert elements at the head
@@ -67,4 +76,5 @@ linked_list.insertAtPosition(25, 5)
 
 # Display the linked list
 linked_list.display()
-        
+linked_list.deleteNode(3)
+linked_list.display()
